@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>👨‍💻 Nuestro Team 
+    </title>
+    <!-- Agregar Bootstrap para estilos y diseño -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="navbar" class="bg-light">
+        <nav class="navbar navbar-expand-lg container">
+        
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#welcome-section">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contactos">Contactos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="welcome-section" class="text-center py-5">
+        <h1>👨‍💻 ¡Hola! Somos un nuevo grupo de programadores ansiosos por enfrentar desafíos y expandir nuestros conocimientos. Estamos en busca de proyectos emocionantes para contribuir y aprender al mismo tiempo. Si tienes una idea o proyecto en mente, ¡estamos listos para sumarnos y hacerlo realidad! </h1>
+    </section>
+      <section class="custom-section" href="contactos">
+        <img src="https://media.licdn.com/dms/image/D4D03AQEf4WIEXpongQ/profile-displayphoto-shrink_800_800/0/1683600182267?e=1707955200&v=beta&t=7FjaxSU013zCJxaefoyFpgDRt5opDP4S7gsYR7sgtBs" title="GABRIEL">
+        <img src="https://avatars.githubusercontent.com/u/129301056?v=4" title="MILAGROS">
+        <img src="https://avatars.githubusercontent.com/u/110680959?v=4" title="BELEN">
+        <img src="https://media.licdn.com/dms/image/D4D03AQGNNY8jNYp-2w/profile-displayphoto-shrink_800_800/0/1666399741765?e=1707955200&v=beta&t=xph0psuXPy4gFas2QH6RMXptiZl-z_zasExB1iDVC88" title="LEANDRO">
+        <img src="https://avatars.githubusercontent.com/u/75495920?v=4" title="GASTON">
+    </section>
+    <footer class="text-center bg-dark py-3">
+        <h3>¡Programemos juntos!</h3>
+        <a class="footer-items"  target="_blank">GitHub</a>
+        <a class="footer-items"  target="_blank">LinkedIn</a>
+        <a class="footer-items"  target="_blank">Instagram</a>
+    </footer>
+
+    <!-- Agregar los scripts de Bootstrap al final del cuerpo -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var images = document.querySelectorAll('.custom-section img');
+
+        images.forEach(function (image) {
+            image.addEventListener('click', function () {
+                var title = this.getAttribute('title');
+                switch (title) {
+                    case 'GABRIEL':
+                        window.location.href = 'https://www.linkedin.com/in/gabriel-ferreyra-0636b321a/';
+                        break;
+                    case 'MILAGROS':
+                        window.location.href = 'https://www.linkedin.com/in/milagros-concha-soraire7774';
+                        break;
+                    case 'BELEN':
+                        window.location.href = 'https://github.com/BellArs';
+                        break;
+                    case 'LEANDRO':
+                        window.location.href = 'https://www.linkedin.com/in/leotorrez/';
+                        break;
+                    case 'GASTON':
+                        window.location.href = 'https://github.com/Cyber-Abadon';
+                        break;
+                    default:
+                        break;
+                }
+            });
+        });
+    });
+</script>
+</html>
